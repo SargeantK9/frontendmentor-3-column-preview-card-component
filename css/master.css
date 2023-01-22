@@ -4,7 +4,7 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
   --transparent-white: hsla(0, 0%, 100%, 0.75);
   --very-light-gray: hsl(0, 0%, 95%);
-  --font-size: 1.2rem;
+  --font-size: 1rem;
 }
 
 body {
@@ -109,8 +109,8 @@ button:hover {
 
   main {
     flex-direction: row;
-    width: 60em;
-    height: 40em;
+    width: calc(var(--font-size) * 61);
+    height: calc(var(--font-size) * 35);
   }
 
   .text-box {
