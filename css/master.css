@@ -111,6 +111,7 @@ button:hover {
     flex-direction: row;
     width: calc(var(--font-size) * 61);
     height: calc(var(--font-size) * 35);
+    scale: 0.8;
   }
 
   .text-box {
