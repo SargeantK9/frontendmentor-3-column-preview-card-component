@@ -1,0 +1,111 @@
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+  --font-size: 1.2rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: var(--very-light-gray);
+  width: calc(var(--font-size) * 22);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  padding: calc(var(--font-size) * 3.25);
+}
+
+h1 {
+  color: var(--very-light-gray);
+  font-size: calc(var(--font-size) * 2);
+  font-family: "Big Shoulders Display", serif;
+  text-transform: uppercase;
+  margin: calc(var(--font-size) * 2) 0;
+}
+
+p {
+  color: var(--transparent-white);
+  font-size: var(--font-size);
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0;
+  line-height: 2;
+}
+
+img {
+  width: calc(var(--font-size) * 3.5);
+}
+
+.sedans-box {
+  border-radius: var(--font-size) var(--font-size) 0 0;
+  background-color: var(--bright-orange);
+}
+
+.sedans-box button {
+  color: var(--bright-orange);
+}
+
+.suvs-box {
+  background-color: var(--dark-cyan);
+}
+
+.suvs-box button {
+  color: var(--dark-cyan);
+}
+
+.luxury-box {
+  border-radius: 0 0 var(--font-size) var(--font-size);
+  background-color: var(--very-dark-cyan);
+}
+
+.luxury-box button {
+  color: var(--very-dark-cyan);
+}
+
+button {
+  margin-top: var(--font-size);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: calc(var(--font-size) * 1.1);
+  width: fit-content;
+  background-color: var(--very-light-gray);
+  border-radius: calc(var(--font-size) * 3);
+  padding: calc(var(--font-size) * 0.75) calc(var(--font-size) * 1.5);
+  border: calc(var(--font-size) * 0.25) solid var(--very-light-gray);
+}
+
+button:hover {
+  background-color: inherit;
+  color: var(--very-light-gray);
+  border: calc(var(--font-size) * 0.25) solid var(--very-light-gray);
+}
+
+@media (orientation: landscape) {
+  body {
+  }
+
+  main {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .sedans-box {
+    border-radius: var(--font-size) 0 0 var(--font-size);
+  }
+
+  .luxury-box {
+    border-radius: 0 var(--font-size) var(--font-size) 0;
+  }
+}
